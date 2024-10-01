@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Firebase</title>
+</head>
+<body>
+    <center>
+        <img width="300px" src="./firebase-logo.svg"/>
+        <h4>Ta quente aqui ou é o 
+            <bold style="color:red">Fire</bold>base?</h4>
+    </center>
+</body>
+<!-- SDK FIrebase -->
+<script src="https://www.gstatic.com/firebasejs/5.  0.3/firebase-app.js"></script> 
+<!-- SDK FIRESTORE -->
+<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script> 
+<!-- CONEXÃO -->
+<script>
+
+    // Dados de conexão
+    const firebaseConfig = {
+    apiKey: "AIzaSyDO9gEMdEKHZpWX7S1d6ohztFanx0VPJGo",
+    authDomain: "bd3-app-libri-aurora.firebaseapp.com",
+    projectId: "bd3-app-libri-aurora",
+    storageBucket: "bd3-app-libri-aurora.appspot.com",
+    messagingSenderId: "908736805276",
+    appId: "1:908736805276:web:a236da999d60b8a6033059"
+    };
+
+    // Inicializa o Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // Initializa o Banco
+    const db = firebase.firestore();
+    console.log(db)
+
+</script>
+<script src="App.js"></script>
+</html>
