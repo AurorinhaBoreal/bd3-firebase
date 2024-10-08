@@ -8,13 +8,24 @@
 </head>
 <body>
     <center>
+        <h2>Firestore WebApp</h2>
+        <div class="content">
+            <form id="add-book-form">
+                <input type="text" placeholder="Nome do Livrinho"/>
+                <input type="text" placeholder="Carinha que escreveu o livrinhp"/>
+                <button>FERNANDO</button>
+            </form>
+        </div>
+        <ul id="book-list">
+
+        </ul>
         <img width="300px" src="./firebase-logo.svg"/>
         <h4>Ta quente aqui ou é o 
             <bold style="color:red">Fire</bold>base?</h4>
     </center>
 </body>
 <!-- SDK FIrebase -->
-<script src="https://www.gstatic.com/firebasejs/5.  0.3/firebase-app.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script> 
 <!-- SDK FIRESTORE -->
 <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script> 
 <!-- CONEXÃO -->
@@ -35,7 +46,6 @@
 
     // Initializa o Banco
     const db = firebase.firestore();
-    console.log(db)
 
 </script>
 <script src="App.js"></script>
